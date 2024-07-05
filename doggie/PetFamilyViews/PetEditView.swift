@@ -59,6 +59,12 @@ struct PetEditView: View {
                 newPet.name = name
                 newPet.joinedDate = joinedDate
                 newPet.birthDate = birthDate
+//                let newPet = Pet(context: viewContext)
+//                newPet.name = name
+//                newPet.joinedDate = joinedDate
+//                newPet.birthDate = birthDate
+//                
+//                newPet.addToPets(newPet)
             }
 
             do {

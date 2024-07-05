@@ -24,6 +24,7 @@ struct PetFamilyView: View {
             VStack{
                 List {
                     ForEach(items) { item in
+                        //TODO: add sorting
 //                        NavigationLink(destination: FamilyProfileView(family: item)) {
 //                            FamilyCardView(family: item)
 //                        }
@@ -46,6 +47,11 @@ struct PetFamilyView: View {
             .background(Color(uiColor: .systemGray6)) // Set VStack background to clear
         }
         .edgesIgnoringSafeArea(.all) // Ignore safe area for full-screen background
+    }
+    
+    private func createFamily(){
+        let family = Family(context: viewContext)
+        family.name = "User Family"
     }
     
     private func delete(item: Family) {
