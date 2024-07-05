@@ -20,28 +20,14 @@ struct PetFamilyView: View {
 
     var body: some View {
         let _ = Swift.print("entered pet family view")
-//        NavigationView {
-//            VStack {
-////                List {
-////                    ForEach(items) { item in
-////                        NavigationLink(destination: FamilyProfileView(family: item)) {
-////                            Text(item.name ?? "Unknown Name")
-////                        }
-////                    }
-////                    .onDelete(perform: deleteItems)
-////                }
-////                .navigationTitle("Family Members")
-////                .navigationBarItems(trailing: EditButton())
-//                }
-//            ButtonView()
-//            }
-        
-//        }
         NavigationView {
             VStack{
                 List {
                     ForEach(items) { item in
-                        NavigationLink(destination: FamilyProfileView(family: item)) {
+//                        NavigationLink(destination: FamilyProfileView(family: item)) {
+//                            FamilyCardView(family: item)
+//                        }
+                        NavigationLink(destination: PetContentView()){
                             FamilyCardView(family: item)
                         }
                         .buttonStyle(PlainButtonStyle()) // To prevent default link styling

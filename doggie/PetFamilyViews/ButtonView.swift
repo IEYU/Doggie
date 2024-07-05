@@ -13,16 +13,19 @@ struct ButtonView: View {
             NavigationLink(destination: PetEditView(initialDate: Date())){
                 VStack{
                     Spacer()
-                    Image(systemName: "pawprint")
+                    Image(systemName: "pawprint").font(.largeTitle)
                     Spacer()
-                    Text("Add Pet")
+                    Text("Add Pet").font(.title)
                     Spacer()
                 }
-            }.fontWeight(.regular)
-                .font(.title)
-                .foregroundColor(.white)
+            }.fontWeight(.thin)
+                .foregroundColor(.black)
                 .frame(width: 200, height: 130)
-                .background(.yellow)
+                .background(Color.white.opacity(1))
+                .overlay(
+                        RoundedRectangle(cornerRadius: 15)
+                            .stroke(Color.white, lineWidth: 1)
+                    )
                 .cornerRadius(15)
                 .shadow(color: .black.opacity(0.3), radius: 3, x: 3, y: 3)
                 .padding()
