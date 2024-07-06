@@ -19,15 +19,10 @@ struct PetFamilyView: View {
     private var items: FetchedResults<Family>
 
     var body: some View {
-        let _ = Swift.print("entered pet family view")
         NavigationView {
             VStack{
                 List {
                     ForEach(items) { item in
-                        //TODO: add sorting
-//                        NavigationLink(destination: FamilyProfileView(family: item)) {
-//                            FamilyCardView(family: item)
-//                        }
                         NavigationLink(destination: PetContentView()){
                             FamilyCardView(family: item)
                         }
@@ -73,20 +68,6 @@ private let itemFormatter: DateFormatter = {
     formatter.dateStyle = .short
     return formatter
 }()
-
-struct FamilyProfileView: View {
-    var family: Family
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Name: \(family.name ?? "Unknown Name")")
-            Text("Joined Date: \(family.joinedDate ?? Date(), formatter: itemFormatter)")
-            Text("Birth Date: \(family.birthDate ?? Date(), formatter: itemFormatter)")
-        }
-        .navigationTitle("\(family.name ?? "Unknown Name")'s Profile")
-        .padding()
-    }
-}
 
 struct FamilyCardView: View {
     var family: Family

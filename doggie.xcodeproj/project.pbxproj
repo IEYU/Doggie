@@ -24,10 +24,10 @@
 		9F25DA6D2C37CC07006854E6 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DA6C2C37CC07006854E6 /* NotesView.swift */; };
 		9F25DA6F2C37CC7B006854E6 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DA6E2C37CC7B006854E6 /* ReminderView.swift */; };
 		9F25DA722C37D986006854E6 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DA712C37D986006854E6 /* DropDownView.swift */; };
-		9F68C3342C387F2200860EDA /* Pet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3302C387F2200860EDA /* Pet+CoreDataClass.swift */; };
-		9F68C3352C387F2200860EDA /* Pet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3312C387F2200860EDA /* Pet+CoreDataProperties.swift */; };
-		9F68C3362C387F2200860EDA /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3322C387F2200860EDA /* Family+CoreDataClass.swift */; };
-		9F68C3372C387F2200860EDA /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3332C387F2200860EDA /* Family+CoreDataProperties.swift */; };
+		9F68C3C32C38C42F00860EDA /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3C12C38C42F00860EDA /* Family+CoreDataClass.swift */; };
+		9F68C3C42C38C42F00860EDA /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3C22C38C42F00860EDA /* Family+CoreDataProperties.swift */; };
+		9F68C3C92C3905E400860EDA /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3C72C3905E400860EDA /* Meal+CoreDataClass.swift */; };
+		9F68C3CA2C3905E400860EDA /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68C3C82C3905E400860EDA /* Meal+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +49,10 @@
 		9F25DA6C2C37CC07006854E6 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		9F25DA6E2C37CC7B006854E6 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		9F25DA712C37D986006854E6 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
-		9F68C3302C387F2200860EDA /* Pet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		9F68C3312C387F2200860EDA /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		9F68C3322C387F2200860EDA /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		9F68C3332C387F2200860EDA /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		9F68C3C12C38C42F00860EDA /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		9F68C3C22C38C42F00860EDA /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		9F68C3C72C3905E400860EDA /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		9F68C3C82C3905E400860EDA /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +123,9 @@
 			children = (
 				9F25DA662C37C9EA006854E6 /* PetContentView.swift */,
 				9F25DA702C37D977006854E6 /* MealViews */,
-				9F25DA6A2C37CA7E006854E6 /* ActivityView.swift */,
-				9F25DA6C2C37CC07006854E6 /* NotesView.swift */,
+				9F68C3CB2C39D1FC00860EDA /* ActivityView */,
 				9F25DA6E2C37CC7B006854E6 /* ReminderView.swift */,
+				9F25DA6C2C37CC07006854E6 /* NotesView.swift */,
 			);
 			path = PetViews;
 			sourceTree = "<group>";
@@ -150,12 +150,20 @@
 		9F68C3272C387C3600860EDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9F68C3302C387F2200860EDA /* Pet+CoreDataClass.swift */,
-				9F68C3312C387F2200860EDA /* Pet+CoreDataProperties.swift */,
-				9F68C3322C387F2200860EDA /* Family+CoreDataClass.swift */,
-				9F68C3332C387F2200860EDA /* Family+CoreDataProperties.swift */,
+				9F68C3C72C3905E400860EDA /* Meal+CoreDataClass.swift */,
+				9F68C3C82C3905E400860EDA /* Meal+CoreDataProperties.swift */,
+				9F68C3C12C38C42F00860EDA /* Family+CoreDataClass.swift */,
+				9F68C3C22C38C42F00860EDA /* Family+CoreDataProperties.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9F68C3CB2C39D1FC00860EDA /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				9F25DA6A2C37CA7E006854E6 /* ActivityView.swift */,
+			);
+			path = ActivityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,17 +244,17 @@
 				9F25DA6B2C37CA7E006854E6 /* ActivityView.swift in Sources */,
 				9F25DA672C37C9EA006854E6 /* PetContentView.swift in Sources */,
 				9F0E85472C376DBC0084CE1B /* HomeView.swift in Sources */,
+				9F68C3C32C38C42F00860EDA /* Family+CoreDataClass.swift in Sources */,
+				9F68C3C42C38C42F00860EDA /* Family+CoreDataProperties.swift in Sources */,
 				9F25DA692C37CA69006854E6 /* MealView.swift in Sources */,
 				9F25DA6D2C37CC07006854E6 /* NotesView.swift in Sources */,
 				9F25DA6F2C37CC7B006854E6 /* ReminderView.swift in Sources */,
 				9F25DA722C37D986006854E6 /* DropDownView.swift in Sources */,
-				9F68C3342C387F2200860EDA /* Pet+CoreDataClass.swift in Sources */,
-				9F68C3352C387F2200860EDA /* Pet+CoreDataProperties.swift in Sources */,
-				9F68C3362C387F2200860EDA /* Family+CoreDataClass.swift in Sources */,
-				9F68C3372C387F2200860EDA /* Family+CoreDataProperties.swift in Sources */,
 				9F0E854B2C376DE70084CE1B /* PetEditView.swift in Sources */,
 				9F0E85342C376D990084CE1B /* doggieApp.swift in Sources */,
 				9F0E854D2C376DED0084CE1B /* CameraView.swift in Sources */,
+				9F68C3C92C3905E400860EDA /* Meal+CoreDataClass.swift in Sources */,
+				9F68C3CA2C3905E400860EDA /* Meal+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +391,7 @@
 				DEVELOPMENT_TEAM = BUA4HSN79Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -413,6 +422,7 @@
 				DEVELOPMENT_TEAM = BUA4HSN79Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

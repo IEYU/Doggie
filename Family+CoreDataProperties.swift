@@ -19,24 +19,24 @@ extension Family {
     @NSManaged public var birthDate: Date?
     @NSManaged public var joinedDate: Date?
     @NSManaged public var name: String?
-    @NSManaged public var pets: NSSet?
+    @NSManaged public var petToMeal: NSSet?
 
 }
 
-// MARK: Generated accessors for pets
+// MARK: Generated accessors for petToMeal
 extension Family {
 
-    @objc(addPetsObject:)
-    @NSManaged public func addToPets(_ value: Pet)
+    @objc(addPetToMealObject:)
+    @NSManaged public func addToPetToMeal(_ value: Meal)
 
-    @objc(removePetsObject:)
-    @NSManaged public func removeFromPets(_ value: Pet)
+    @objc(removePetToMealObject:)
+    @NSManaged public func removeFromPetToMeal(_ value: Meal)
 
-    @objc(addPets:)
-    @NSManaged public func addToPets(_ values: NSSet)
+    @objc(addPetToMeal:)
+    @NSManaged public func addToPetToMeal(_ values: NSSet)
 
-    @objc(removePets:)
-    @NSManaged public func removeFromPets(_ values: NSSet)
+    @objc(removePetToMeal:)
+    @NSManaged public func removeFromPetToMeal(_ values: NSSet)
 
 }
 

@@ -4,15 +4,13 @@
         <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="joinedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="pets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pet" inverseName="family" inverseEntity="Pet"/>
+        <relationship name="petToMeal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" inverseName="mealToPet" inverseEntity="Meal"/>
     </entity>
-    <entity name="Pet" representedClassName="Pet" syncable="YES">
+    <entity name="Meal" representedClassName="Meal" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="String"/>
-        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="joinedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="meal" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="String"/>
-        <relationship name="family" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Family" inverseName="pets" inverseEntity="Family"/>
+        <relationship name="mealToPet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Family" inverseName="petToMeal" inverseEntity="Family"/>
     </entity>
 </model>

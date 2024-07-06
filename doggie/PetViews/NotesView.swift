@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NotesView: View {
     var body: some View {
+//        TODO: visualize (pie chart) of the past 7 days, past month, and past year
         Text("notes - coming soon")
     }
 }
