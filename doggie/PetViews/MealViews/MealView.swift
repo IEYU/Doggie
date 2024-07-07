@@ -53,17 +53,19 @@ struct MealView: View {
                                 .stroke(Color.black, lineWidth: 1)
                         )
                         .cornerRadius(10)
+                        .fontWeight(.light)
                         Spacer()
-                    }
+                    }.padding(.top, 5.0)
                 }
                 .padding(.bottom, 8.0)
                 .background(.white)
                 .cornerRadius(15)
-                .shadow(color: .black.opacity(0.1), radius: 3, x: 3, y: 3)
+//                .shadow(color: .black.opacity(0.1), radius: 3, x: 3, y: 3)
                 
                 Spacer()
             }
-            Divider().frame(height: 0.5).background(.black).padding()
+//            Divider().frame(height: 0.5).background(.black).padding(.horizontal)
+            Divider().padding(.all, 5.0)
             
             ForEach(meals){meal in
                 HStack {
