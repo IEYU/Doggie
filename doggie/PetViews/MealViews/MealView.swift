@@ -74,10 +74,10 @@ struct MealView: View {
                         .frame(maxWidth: 50, alignment: .leading)
                     Spacer()
                     Text(meal.meal ?? "")
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                     Text(meal.amount ?? "")
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                     Button(role: .destructive) {
                         delete(meal: meal)

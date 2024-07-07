@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23E214" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activityName" optional="YES" attributeType="String"/>
+        <attribute name="activityTime" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="activityToPet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Family" inverseName="petToActivity" inverseEntity="Family"/>
+    </entity>
     <entity name="Family" representedClassName="Family" syncable="YES">
         <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="joinedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="petToActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="activityToPet" inverseEntity="Activity"/>
         <relationship name="petToMeal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" inverseName="mealToPet" inverseEntity="Meal"/>
     </entity>
     <entity name="Meal" representedClassName="Meal" syncable="YES">

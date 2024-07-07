@@ -35,7 +35,12 @@ struct DropDownView: View {
                     //drop down
                     VStack{
                         HStack{
-                            Text(timeSelection ?? "time") //if no selection, show prompt
+                            if(timeSelection == ""){
+                                Text("time").foregroundColor(.gray)
+                            }
+                            else{
+                                Text(timeSelection!)
+                            }
                             
                             Spacer()
                             
@@ -79,7 +84,7 @@ struct DropDownView: View {
                     .background(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(radius: 4)
-                    .frame(width: 90)
+                    .frame(width: 95)
                 }
                 
                 //prompt 2
@@ -87,8 +92,12 @@ struct DropDownView: View {
                 //drop down
                 VStack{
                     HStack{
-                        Text(mealSelection ?? "brand") //if no selection, show prompt
-                        
+                        if(mealSelection == ""){
+                            Text("brand").foregroundColor(.gray)
+                        }
+                        else{
+                            Text(mealSelection!)
+                        }
                         Spacer()
                         
                         Image(systemName: "chevron.down")
@@ -131,7 +140,7 @@ struct DropDownView: View {
                 .background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .shadow(radius: 4)
-                .frame(width: 140)
+                .frame(width: 135)
                 }
                 
                 //prompt 3
@@ -139,7 +148,12 @@ struct DropDownView: View {
                 //drop down
                 VStack{
                     HStack{
-                        Text(amountSelection ?? "amount") //if no selection, show prompt
+                        if(amountSelection == ""){
+                            Text("amt").foregroundColor(.gray)
+                        }
+                        else{
+                            Text(amountSelection!)
+                        }
                         
                         Spacer()
                         

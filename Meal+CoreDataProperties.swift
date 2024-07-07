@@ -2,7 +2,7 @@
 //  Meal+CoreDataProperties.swift
 //  doggie
 //
-//  Created by Maggie Gong on 7/5/24.
+//  Created by Maggie Gong on 7/6/24.
 //
 //
 
